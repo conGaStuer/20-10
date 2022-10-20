@@ -22,10 +22,18 @@
 	</header>
 	
 	<section class="box">  
-		<video src="ngaydautien2.mp4" autoplay loop></video>
+		<video  autoplay="1"  loop muted >
+			<source src="ngaydautien2.mp4" type="video/mp4">
+		</video>
+		
 		<h1>Chúc mừng ngày phụ nữ Việt Nam 20/10</h1> 
 		<h3>From Trai 12A1 with Luv &hearts;</h3>
-		<a href="#" class="boxBtn">Chúc các bạn nữ 12A1 và cô Vỹ mãi xinh đẹp, duyên dáng và đáng yêu nhé !!<br>(nhớ ấn vào từng chữ 1 2 A 1 để ôn lại kỹ niệm nè :3) </a>   
+		<a href="#" class="boxBtn" id="but" onclick="audio.play();">Chúc các bạn nữ 12A1 và cô Vỹ mãi xinh đẹp, duyên dáng và đáng yêu nhé !!<br>(nhớ ấn vào từng chữ 1 2 A 1 để ôn lại kỹ niệm nè :3) </a>  
+		<a href="#" class="boxBtn" id="but" onclick="audio.play();">Bấm vô đây để nghe muzik nè</a>   
+		<script type="text/javascript">
+			const audio = new Audio();
+			audio.src = "audio.mp3";
+		</script>
 	</section>
 </body>
 </html>
